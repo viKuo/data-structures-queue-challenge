@@ -1,14 +1,14 @@
 # Queues
 
-A [Queue](http://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29) is a lot like the Stack data structure, but the order in which you pull elements out is different. In a Queue you _enqueue_ to put something in the Queue and you _dequeue_ to pull something out. The first thing in to the data structure is the first thing that will be _dequeued_. In other words, this is a **first-in, first-out** data structure, aka FIFO.
+A [Queue](http://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29) is a lot like the Stack data structure, but the order in which you pull elements out is different. In a Queue you `enqueue` to put something into the Queue and you `dequeue` to pull something out. In other words, this is a **first-in, first-out** data structure, aka FIFO.
 
 To recap:
- * Stacks — The **last** element added to the list is the first to be removed with `pop`, so a stack if a LIFO data structure
- * Queues - The **first** element added to the list is the first to be removed with `dequeue`, so a Queue is a FIFO data structure.
+ * Stacks are LIFO. The **last** **item** added to the list is the **first** to be pulled **out**, so a stack if a LIFO data structure.
+ * Queues are FIFO. The **first** **item** added to the list is the **first** to be pulled **out**, so a Queue is a FIFO data structure.
 
 ## Why is this important?
 
-Queues are the natural complement to Stacks. Some algorithms work with Queues or Stacks to help maintain state. The same algorithm using a Queue vs a Stack can produce wildly different results.
+Queues are the natural complement to Stacks. Some algorithms work with Queues, others work with Stacks. For example, the difference between a [depth-first-search](https://en.wikipedia.org/wiki/Depth-first_search) and a [breadth-first-search](https://en.wikipedia.org/wiki/Breadth-first_search) is whether they use a stack or a queue.
 
 ## Release 1: Implement the Queue
 
